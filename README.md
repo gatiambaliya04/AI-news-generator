@@ -2,7 +2,7 @@
 
 A daily email digest of AI news, written up gossip-column style, pulled only
 from a curated list of verified sources. Runs every morning at 7:00 AM IST
-via GitHub Actions — no server of your own needed.
+via GitHub Actions no server of your own needed.
 
 ## Setup (about 10 minutes, one-time)
 
