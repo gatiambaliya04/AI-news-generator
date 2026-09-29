@@ -143,8 +143,10 @@ def generate_digest() -> str:
         },
         timeout=120,
     )
-    resp.raise_for_status()
-    data = resp.json()
+    
+    if not resp.ok: 
+        sys.exit(f"Gemini API error {resp.status_code}: {resp.text}") 
+        data = resp.json()
 
     # Gemini's response shape: data["candidates"][0]["content"]["parts"] is a
     # list of parts (usually just one for a plain-text answer). We join all
