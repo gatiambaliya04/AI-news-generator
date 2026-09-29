@@ -41,7 +41,7 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", GMAIL_ADDRESS)
 # Google Search grounding, which is what lets this actually search the web
 # instead of answering from memory. Swap to "gemini-2.5-pro" for higher
 # quality at higher cost if you want.
-MODEL = "gemini-2.5-flash"
+MODEL = "gemini-3.8-flash"
 
 # Curated list of verified/trustworthy AI-news sources. The model is told to
 # restrict its search to these domains. Edit this list to taste.
